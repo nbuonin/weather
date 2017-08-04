@@ -49,18 +49,18 @@ class ConfNotValid(Exception):
 if __name__ == '__main__':
     print("Hello World")
 
-    conf_file = find_config('~/')
-    conf = []
-    if (conf_file):
-        conf = check_config(conf_file)
-    else:
-        get_user_config('~/')
+    # conf_file = find_config('~/')
+    # conf = []
+    # if (conf_file):
+        # conf = check_config(conf_file)
+    # else:
+        # get_user_config('~/')
 
-    if (conf.length != 2):
-        get_user_config('~/')
-        """ and do it all over again"""
-    else:
-        request = construct_request_string("""with all the args""")
-        weather_json = fetch_data(request)
-        print(parse_data(weather_json))
-        return
+    # if (conf.length != 2):
+        # get_user_config('~/')
+        # """ and do it all over again"""
+    # else:
+        # request = construct_request_string("""with all the args""")
+        # weather_json = fetch_data(request)
+        # print(parse_data(weather_json))
+
